@@ -30,6 +30,7 @@ fn main() {
         (0, 0) => day_01::max_calories(content),
         (0, 1) => day_01::top_three(content),
         (1, 0) => day_02::count_points(content),
+        (1, 1) => day_02::count_points_with_result(content),
         _ => unreachable!(),
     }
 }
