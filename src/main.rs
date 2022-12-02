@@ -1,4 +1,5 @@
 mod day_01;
+mod day_02;
 use std::{fs, str};
 
 use clap::Parser;
@@ -28,6 +29,7 @@ fn main() {
     match (args.day, args.exercice) {
         (0, 0) => day_01::max_calories(content),
         (0, 1) => day_01::top_three(content),
+        (1, 0) => day_02::count_points(content),
         _ => unreachable!(),
     }
 }
