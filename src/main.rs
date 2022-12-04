@@ -33,6 +33,7 @@ fn main() {
         (1, 0) => day_02::count_points(content),
         (1, 1) => day_02::count_points_with_result(content),
         (2, 0) => day_03::get_priorities(content),
+        (2, 1) => day_03::get_badges(content),
         _ => unreachable!(),
     }
 }
