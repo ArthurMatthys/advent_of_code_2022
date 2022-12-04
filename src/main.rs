@@ -1,5 +1,6 @@
 mod day_01;
 mod day_02;
+mod day_03;
 use std::{fs, str};
 
 use clap::Parser;
@@ -31,6 +32,7 @@ fn main() {
         (0, 1) => day_01::top_three(content),
         (1, 0) => day_02::count_points(content),
         (1, 1) => day_02::count_points_with_result(content),
+        (2, 0) => day_03::get_priorities(content),
         _ => unreachable!(),
     }
 }
