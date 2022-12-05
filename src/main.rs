@@ -1,6 +1,7 @@
 mod day_01;
 mod day_02;
 mod day_03;
+mod day_04;
 use std::{fs, str};
 
 use clap::Parser;
@@ -34,6 +35,8 @@ fn main() {
         (1, 1) => day_02::count_points_with_result(content),
         (2, 0) => day_03::get_priorities(content),
         (2, 1) => day_03::get_badges(content),
+        (3, 0) => day_04::get_pairs_number(content),
+        (3, 1) => day_04::get_overlaps(content),
         _ => unreachable!(),
     }
 }
